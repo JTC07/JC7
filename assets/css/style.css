@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #6da8e0;
+}
+
+
+/*START OF NAV*/
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.nav-link:hover {
+    background-color: gray;
+    transition: .5s;
+    color: black;
+}
+
+.navbar1 {
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+    background-color: #1fb6db;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar button {
+    border: none;
+}
+
+.navbar button:focus {
+    outline: none;
+}
+
+.navbar-brand img {
+    height: 3rem;
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* hide close when burger shown */
+
+.navbar button[aria-expanded="true"]>span.close {
+    display: inline;
+    color: gray;
+    opacity: 1;
+    text-shadow: none;
+}
+
+button[aria-expanded="true"]>span.navbar-toggler-icon {
+    display: none;
+}
+
+button[aria-expanded="false"]>span.close {
+    display: none;
+}
+
+
+/*START OF HEADER*/
+
+#header {
+    min-height: 100vh;
+    background-image: url('../images/back.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#header h3 {
+    font-size: 4rem;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: 800;
+    text-shadow: 3px 3px #1c9cf1;
+}
+
+#header p {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px #1c9cf1;
+    letter-spacing: 1px;
+}
+
+#hire-btn {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+#hire-btn a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+#project-btn a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+#project-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+
+/*END OF HEADER*/
+
+
+/*----LOADING--------*/
+
+#loader {
+    min-height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#loader img {
+    height: 15rem;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*----END OF LOADING--*/
+
+
+/*START OF ABOUT*/
+
+#about {
+    min-height: 100vh;
+    background-color: #6da8e0;
+    overflow-x: hidden;
+}
+
+#about h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+#about p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#about img {
+    border-radius: 50%;
+    height: 13rem;
+    width: auto;
+}
+
+
+/*END OF ABOUT*/
+
+
+
+/*START OF WHAT I DO*/
+
+#task {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#task h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+#task h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 2px;
+}
+
+#task img {
+    height: 7rem;
+    width: 7rem;
+}
+
+#task p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/*END OF WHAT I DO*/
+
+
+/*START OF SKILLS*/
+
+#skills {
+    min-height: 100vh;
+    background-color: #6da8e0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+
+#skills h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#skills img {
+    height: 4.6rem;
+    width: 4.6rem;
+}
+
+#node {
+    height: 5rem;
+    width: 100rem;
+}
+
+
+/*END OF SKILLS*/
+
+
+/*START OF PROJECT*/
+
+#project {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#project h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #ff0000;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#project p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#project img {
+    height: 18rem;
+    width: 100%;
+    box-shadow: 2px 2px 8px 1px rgb(255, 255, 255);
+}
+
+#project .btn {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border-radius: 0;
+}
+
+
+/*END OF PROJECT*/
+
+
+/*START OF CONTACT*/
+
+#contact {
+    min-height: 50vh;
+}
+
+#contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #080808;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+#contact img {
+    height: 10rem;
+    width: auto;
+}
+
+#contact .btn {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border-radius: 0;
+}
+
+
+/*END OF CONTACT*/
+
+
+/*START OF FOOTER*/
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #597783;
+    color: white;
+}
+
+.footer i {
+    font-size: 2rem;
+    color: white;
+}
+
+.footer i:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+    color: yellow;
+}
+
+#social-media .fab {
+    font-size: 1.5rem;
+}
+
+
+/*END OF FOOTER*/
+
+@media only screen and (max-width: 767px) {
+    /* start of about */
+    #about {
+        min-height: 70vh;
+        background-color: #264653;
+        overflow-x: hidden;
+    }
+    /* end of about */
+    /* start of award */
+    .certificate img {
+        border-radius: 0;
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+    /* end of award */
+}
+
+@media only screen and (max-width: 500px) {
+    /*START OF HEADER*/
+    #header h1 {
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 900;
+        text-shadow: 3px 3px #ff0000;
+    }
+    #header p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: 2px 2px #ff0000;
+        letter-spacing: 1px;
+    }
+    #hire-btn {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 0;
+    }
+    #project-btn {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        border-radius: 0;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    /*END OF HEADER*/
+    /*START OF ABOUT*/
+    #about h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 2px 2px #ff0000;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    #about p {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-size: 1rem;
+    }
+    /*END OF ABOUT*/
+    /* START OF AWARD */
+    #award h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 2px 2px #ff0000;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    /* END OF AWARD */
+    /*START OF WHAT I DO*/
+    #task h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 1px 1px #ff0000;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    #task img {
+        height: 7rem;
+        width: 7rem;
+    }
+    #task p {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+    }
+    /*END OF WHAT I DO*/
+    /*START OF SKILLS*/
+    #skills h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 1px 1px #ff0000;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    #skills img {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    /*END OF SKILLS*/
+    /*START OF PROJECT*/
+    /* .project-details {
+		order: 1;
+	}
+
+	.project {
+		order: 2;
+	} */
+    #project img {
+        height: 12rem;
+        width: 100%;
+    }
+    #project h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 1px 1px #ff0000;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #project p {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    /*END OF PROJECT*/
+}
